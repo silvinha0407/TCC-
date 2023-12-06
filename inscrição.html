@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <a href="rações.css"></a>
+      <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+      <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+
+
+    <title> Seja Noso Cliente</title>
+
+<style>
+
+body{
+    background-image: url("img/fundo.jpg");
+    font-family: 'Coiny';
+}
+
+h1{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Coiny';
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type=tel] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049d8;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #4d6886c5;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<h1>Faça o seu cadastro</h1>
+
+<div>
+  <form action="/action_page.php">
+    <label for="fname">Nome completo</label>
+    <input type="text" id="fname" name="firstname" placeholder="Seu nome..">
+
+    <label for="telefone">Telefone</label>
+    <input type="tel" id="telefone" class="input-padrao" required placeholder="(xx) xxxxx-xxxx">
+
+    <label for="lname">Endereço</label>
+    <input type="text" id="lname" name="lastname" placeholder="Seu endereço">
+    
+   
+    </select>
+  
+    <input type="submit" value="Inscrever">
+  </form>
+</div>
+
+</body>
+</html>

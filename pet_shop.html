@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+  <style>
+    .mySlides {
+      display:none;
+    }
+
+    body {
+      background-image: url("img/fundo.jpg");
+      font-family: 'Coiny';
+      margin: 0;
+    }
+    
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      background-color: #4d6886;
+    }
+    
+    header img {
+      width: 100px;
+    }
+    
+    nav {
+      display: flex;
+      background-color: #4d6886;
+      flex-wrap: wrap;
+    }
+    
+    nav ul {
+      list-style-type: none;
+      display: flex;
+      margin: 0;
+      padding: 0;
+      flex-wrap: wrap;
+    }
+    
+    nav ul li {
+      margin-right: 20px;
+      margin-bottom: 10px;
+    }
+    
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+    
+    #divBusca {
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      margin-left: 20px;
+      margin-top: 2px;
+    }
+    
+    #txtBusca {
+      background-color: #E0EEEE;
+      border: solid 2px #5F9EA0;
+      border-radius: 10px;
+      width: 300px;
+      height: 30px;
+      margin-top: 5px;
+    }
+    
+    #btnBusca {
+      border: none;
+      height: 30px;
+      border-radius: 0 7px 7px 0;
+      width: 70px;
+      font-weight: bold;
+      margin-top: 5px;
+      background: #5F9EA0;
+      cursor: pointer;
+      transition: all ease-in-out 300ms;
+    }
+    
+    #btnBusca:hover {
+      background: #588e92;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover {
+      background-color: #3a4b5e;
+    }
+    
+    .w3-content {
+      max-width: 100%;
+      position: relative;
+      margin: auto;
+      margin-top: 10vh;
+      display: block;
+      padding: 0;
+    }
+    
+    .w3-button {
+      position: absolute;
+      top: 50%;
+      font-size: 18px;
+      padding: 16px;
+      color: white;
+      background-color: #4d6886;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .w3-display-left {
+      left: 0;
+    }
+    
+    .w3-display-right {
+      right: 0;
+    }
+    
+    footer {
+      text-align: center;
+      padding: 15px; 
+      background-color: #4d6886;
+      color: white;
+      position: fixed;
+      width: 100%;
+      bottom: 0;
+    }
+
+    .container {
+      position: relative;
+      display: none;
+    }
+    
+    #imgtext {
+      position: absolute;
+      bottom: 15px;
+      left: 15px;
+      color: white;
+      font-size: 20px;
+    }
+    
+    .closebtn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      color: white;
+      font-size: 35px;
+      cursor: pointer;
+    }
+    
+     .slides{
+      margin: 0 auto;
+      margin-top: 70px;
+     }
+
+  </style>
+
+  <title>Pet Shop</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="img/logo1.png" alt="Logo Pet Shop">
+    <nav>
+      <ul>
+        <li><a class="active" href="file:///C:/Users/LarissaFerreiraGomes/Desktop/comandos/inscri%C3%A7%C3%A3o.html">Seja nosso Cliente</a></li>
+        <li><a href="file:///C:/Users/LarissaFerreiraGomes/Desktop/comandos/ra%C3%A7%C3%B5es.html">Rações e Petiscos</a></li>
+        <li><a href="file:///C:/Users/LarissaFerreiraGomes/Desktop/comandos/brinquedos.html">Brinquedos</a></li>
+        <li><a href="banho.html">Banho e tosa</a></li>
+        <li><a href="medicina.html">Medicamentos e Vacinas</a></li>
+        <li><a href="agenda.html">Agendamentos de Serviços</a></li>
+        <li>
+          <div id="divBusca">
+            <input type="text" id="txtBusca" placeholder="Buscar..." />
+            <button id="btnBusca">Buscar</button>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+  <div class="slides" style="max-width:900px">
+    <img class="mySlides" src="img/pet_style.png" style="width:100%">
+    <img class="mySlides" src="img/racao.png" style="width:100%">
+    <img class="mySlides" src="img/toys.png" style="width:100%">
+    <img class="mySlides" src="img/banho.png" style="width:100%">
+    <img class="mySlides" src="img/agenda.png" style="width:100%">
+  </div>
+
+  <footer>
+    <p>&copy; 2023 Minha Loja Online. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    var myIndex = 0;
+    carousel();
+    
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}    
+      x[myIndex-1].style.display = "block";  
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
+</body>
+
+</html>

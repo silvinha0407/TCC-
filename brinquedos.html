@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">
+   <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+   <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+
+   <title>Brinquedos</title>
+
+   <div class="imagem">
+     <img src="./img/toys.png" height="350px" width="100%">
+   </div>
+
+   </head>
+<style>
+   body{
+      background-image: url("img/fundo.jpg");
+      font-family: 'Coiny';
+   }
+   .imagem{
+       margin-left: 20%;
+       margin-top: 20px;
+       width: 60%;
+       border: 3px solid #ccc;
+       border-radius: 20px;
+       overflow: hidden;
+   }
+   
+   .gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px; 
+}
+        
+   .gallery1, .gallery2, .gallery3, .gallery4 {
+    width: 380px;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+    color: #ccc;
+}
+
+.img1, .img2, .img3, .img4 {
+    width: 100%;
+    border: 3px solid #ccc;
+    border-radius: 20px;
+    overflow: hidden;
+}
+</style>
+ <body>
+
+  <div class="gallery-container">
+    <div class="gallery1">
+        <div class="img1">
+            <img src="brinquedos/brinquedo_gatin.jpg" width="400" height="250">
+            <div class="desc">Ração para gato 10 kg R$107,00</div>
+        </div>
+    </div>
+    
+    <div class="gallery2">
+        <div class="img2">
+            <img src="brinquedos/brinquedos.jpg" width="400" height="250">
+            <div class="desc">Ração de carne 15 kg R$100,00</div>
+        </div>
+    </div>
+
+    <div class="gallery3">
+        <div class="img3">
+            <img src="brinquedos/doguin.PNG" width="400" height="250">
+            <div class="desc">Petisco para cachorro R$7,90</div>
+        </div>
+    </div>
+
+    <div class="gallery4">
+        <div class="img4">
+            <img src="brinquedos/gatin.PNG" width="400" height="250">
+            <div class="desc">Petisco para gato R$16,90</div>
+            
+        </div>
+    </div>
+</div>
+
+ </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Coiny' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="./img/logo1.png">
+
+    <style>
+        body {
+            background-image: url("img/fundo.jpg");
+            font-family: 'Coiny';
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .quadrado {
+            border: 2px solid rgb(255, 251, 251);
+            background-color: #5F9EA0;
+            border-radius: 15px;
+            padding: 50px;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 50px; 
+        }
+        
+        h1 {
+            font-size: 45px;
+            color: aliceblue;
+            text-shadow: 2px 2px 5px #2a6b6d;
+        }
+        
+        p {
+            font-size: 20px;
+            color: #ffff;
+        }
+        
+        .gallery1, .gallery2, .gallery3, .gallery4 {
+            width: 380px;
+        }
+        
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        
+        div.desc {
+            padding: 20px;
+            text-align: center;
+            color: #ccc;
+        }
+        
+        .img1, .img2, .img3, .img4 {
+            width: 100%;
+            border: 3px solid #ccc;
+            border-radius: 20px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="quadrado">
+        <h1>Rações e Petiscos</h1>
+        <p>Amor em cada mordida! Nossas rações premium e petiscos irresistíveis são a escolha perfeita para mimar seu
+            pet.</p>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery1">
+            <div class="img1">
+                <img src="racoes_e_petiscos/racao1.jpg" width="400" height="250">
+                <div class="desc">Ração para gato 10 kg R$107,00</div>
+            </div>
+        </div>
+        
+        <div class="gallery2">
+            <div class="img2">
+                <img src="racoes_e_petiscos/raca2.jpg" width="400" height="250">
+                <div class="desc">Ração de carne 15 kg R$100,00</div>
+            </div>
+        </div>
+
+        <div class="gallery3">
+            <div class="img3">
+                <img src="racoes_e_petiscos/racao3.PNG" width="400" height="250">
+                <div class="desc">Petisco para cachorro R$7,90</div>
+            </div>
+        </div>
+
+        <div class="gallery4">
+            <div class="img4">
+                <img src="racoes_e_petiscos/racao4.PNG" width="400" height="250">
+                <div class="desc">Petisco para gato R$16,90</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
